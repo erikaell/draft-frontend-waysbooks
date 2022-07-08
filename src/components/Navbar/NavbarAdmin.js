@@ -49,7 +49,7 @@ function NavbarAdmin() {
                                 <img
                                     src={book}
                                     style={{ width: '2rem', marginRight: '1rem' }}
-                                />Profile
+                                />Product
                             </NavDropdown.Item>
                             <NavDropdown.Item>
                                 <img

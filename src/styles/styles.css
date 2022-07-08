@@ -109,3 +109,54 @@ body {
   border-radius: 5px;
   padding: 15px;
 }
+
+.form input {
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #bcbcbc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  color: black;
+}
+
+.form textarea {
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #bcbcbc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  color: black;
+}
+
+.btnLogin {
+  background: #393939 !important;
+  border-radius: 0px !important;
+
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 25px !important;
+
+  color: #ffffff !important;
+}
+
+.btnHere {
+  position: relative;
+  left: -0.45rem;
+  width: 3rem;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.label-file-add-book {
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #bcbcbc;
+  color: rgb(126,132,139);
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}

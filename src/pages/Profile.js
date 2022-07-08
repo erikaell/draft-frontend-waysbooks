@@ -1,12 +1,15 @@
+import { useState } from "react"
 import NavbarUser from "../components/Navbar/NavbarUser"
-import { Row, Col, Button } from "react-bootstrap"
+import { Row, Col, Button, Card } from "react-bootstrap"
 import email from '../assets/email.svg'
 import gender from '../assets/gender.svg'
 import phone from '../assets/phone.svg'
 import location from '../assets/location.svg'
 import profile from '../assets/blank-profile.png'
+import dataBooks from '../dummyData/books'
 
 function Profile() {
+    const [datas] = useState(dataBooks)
 
     return (
         <>
@@ -70,6 +73,21 @@ function Profile() {
                             <Col sm={12}>
                             <h3 className="sentenceSection mt-4">My Books</h3>
                             </Col>
+                            <Row>
+                    {datas.map((item) => (
+                        <Col sm="2" key={item.id}>
+                            <Card className="mb-3" style={{ backgroundColor:'transparent', border:'none' }}>
+                                <Card.Img variant="top" style={{ borderRadius:1 }} src={item.img}/>
+                                <Card.Body style={{ padding: 0 }}>
+                                        <p className='bookTitle' style={{ marginTop: '5px', marginBottom: '5px' }}>{item.title}</p>
+                                        <p className='bookAuthor text-muted'>By. {item.author}</p>
+                                        <Button variant="dark" style={{ borderRadius: 0, width:'100%', alignItems: 'center' }}> Download </Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                    
+                </Row>
                         </Row>
                 </div>
             </div>
